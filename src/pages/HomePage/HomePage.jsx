@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {NavBar} from "../../components/NavBar";
 import {Jumbotron} from "../../components/Hero";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -13,25 +13,36 @@ import {Why} from "../../components/Why";
 const HomePage = () => {
     return (
         <>
-            <div className={" relativebg-amber-950 min-h-screen w-full flex flex-col"}>
+            <header className="min-h-screen w-full flex flex-col">
                 <NavBar/>
-                <Jumbotron/>
+                <Jumbotron id="hero"/>
                 <ScrollVelocity
                     id={"scrollVelocity"}
-                    className={"text-sm "}
+                    className={"text-sm"}
                     velocity={10}
                     numCopies={300}
-                    texts={['Save Food Last Bite']}
+                    texts={["Save Food Last Bite"]}
                 />
-            </div>
-            <Step/>
-            <Why/>
-            <Register/>
-            <Impact/>
-            <UserRespon/>
-            <DownloadApp/>
+            </header>
+            <main className=" ">
+                <div className=" " id="HowItWorks">
+                    <Step/>
+                </div>
+                <div className=" " id="why">
+                    <Why/>
+                </div>
+                <div className=" " id="">
+                    <Register/>
+                </div>
+                <div className=" " id="impact">
+                    <Impact/>
+                </div>
+                <div className=" " id="user-response">
+                    <UserRespon/>
+                </div>
+            </main>
+            <DownloadApp id="download-app"/>
             <Footer/>
-
         </>
     );
 };

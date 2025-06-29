@@ -1,36 +1,69 @@
-import React from 'react'
+import React from "react";
+import {CreditCardIcon, SearchLocationIcon, ShoppingBagIcon,} from "../../assets/Icon";
 
-const Step = () => {
+const Step = () => { // Added a comment to force re-render
+    const secondaryColor = "bg-green-400";
+    const textColorMuted = "text-gray-600";
+
     return (
-        <section className={"w-full bg-white py-20 flex flex-col items-center justify-center   px-4"}>
-            <h1 className={"font-bold text-4xl   text-center"}>Just 3 Easy Steps</h1>
-            <p className="mt-2 text-lg   text-center" style={{maxWidth: '500px'}}>Save delicious food
-                quickly and conveniently.</p>
-            <div className={"flex flex-col md:flex-row gap-8 mt-12 max-w-5xl w-full"}>
-                {/* Step 1 */}
-                <div
-                    className={"flex-1 bg-white/5 p-8 rounded-xl text-center flex flex-col items-center shadow-lg hover:shadow-secondary/20 transition-shadow duration-300"}>
-                    <div className="text-4xl font-bold text-secondary mb-4">1</div>
-                    <h3 className="text-2xl font-semibold   mb-3">Find Food</h3>
-                    <p className=" ">Browse surplus food from your favorite local stores and
-                        restaurants.</p>
+        <section id="HowItWorks" className="py-16 sm:py-20 bg-gray-50">
+            <div className="container mx-auto px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                        Just 3 Easy Steps
+                    </h2>
+                    <p className={`${textColorMuted} mt-2`}>
+                        Save delicious food quickly and conveniently.
+                    </p>
                 </div>
-                {/* Step 2 */}
-                <div
-                    className={"flex-1 bg-white/5 p-8 rounded-xl text-center flex flex-col items-center shadow-lg hover:shadow-secondary/20 transition-shadow duration-300"}>
-                    <div className="text-4xl font-bold text-secondary mb-4">2</div>
-                    <h3 className="text-2xl font-semibold  -3">Rescue It</h3>
-                    <p className=" ">Purchase at a great price through our secure app.</p>
-                </div>
-                {/* Step 3 */}
-                <div
-                    className={"flex-1 bg-white/5 p-8 rounded-xl text-center flex flex-col items-center shadow-lg hover:shadow-secondary/20 transition-shadow duration-300"}>
-                    <div className="text-4xl font-bold text-secondary mb-4">3</div>
-                    <h3 className="text-2xl font-semibold   mb-3">Enjoy</h3>
-                    <p className=" ">Pick up your food, enjoy your meal, and help reduce food waste.</p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                    {/* Step 1 */}
+                    <div className="p-6">
+                        <div
+                            className={`flex items-center justify-center h-20 w-20 rounded-full ${secondaryColor} text-white mx-auto mb-4 shadow-lg`}
+                        >
+                            <SearchLocationIcon/>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                            1. Discover
+                        </h3>
+                        <p className={textColorMuted}>
+                            Explore surplus food offers from restaurants and stores around
+                            you.
+                        </p>
+                    </div>
+                    {/* Step 2 */}
+                    <div className="p-6">
+                        <div
+                            className={`flex items-center justify-center h-20 w-20 rounded-full ${secondaryColor} text-white mx-auto mb-4 shadow-lg`}
+                        >
+                            <CreditCardIcon/>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                            2. Order & Pay
+                        </h3>
+                        <p className={textColorMuted}>
+                            Order your chosen food and pay securely directly in the app.
+                        </p>
+                    </div>
+                    {/* Step 3 */}
+                    <div className="p-6">
+                        <div
+                            className={`flex items-center justify-center h-20 w-20 rounded-full ${secondaryColor} text-white mx-auto mb-4 shadow-lg`}
+                        >
+                            <ShoppingBagIcon/>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                            3. Pick Up & Enjoy
+                        </h3>
+                        <p className={textColorMuted}>
+                            Pick up your order at the seller's location at the specified time.
+                            Enjoy!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-    )
-}
-export default Step
+    );
+};
+export default Step;

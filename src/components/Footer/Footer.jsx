@@ -43,6 +43,11 @@ const Footer = () => {
                   Blog
                 </a>
               </li>
+              <li>
+                <a href="/developers" class="text-gray-400 hover:text-white">
+                  Developers
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -68,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+        <div class="mt-12 border-t border-dark pt-6 text-center text-muted text-sm">
           <p>&copy; 2025 LastBite by Enigma Camp. All Rights Reserved.</p>
         </div>
       </div>

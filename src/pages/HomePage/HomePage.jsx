@@ -24,20 +24,20 @@ const HomePage = () => {
                     texts={["Save Food Last Bite"]}
                 />
             </header>
-            <main className=" ">
-                <div className=" " id="HowItWorks">
+            <main>
+                <div id="HowItWorks">
                     <Step/>
                 </div>
-                <div className=" " id="why">
+                <div id="why">
                     <Why/>
                 </div>
-                <div className=" " id="">
+                <div>
                     <Register/>
                 </div>
-                <div className=" " id="impact">
+                <div id="impact">
                     <Impact/>
                 </div>
-                <div className=" " id="user-response">
+                <div id="user-response">
                     <UserRespon/>
                 </div>
             </main>

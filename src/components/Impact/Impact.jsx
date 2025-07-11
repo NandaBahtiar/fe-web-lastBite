@@ -19,7 +19,7 @@ const Impact = () => {
                             <i class="fas fa-utensils"></i>
                         </div>
                         <h3
-                            class="text-4xl font-bold text-gray-800 counter"
+                            class="text-4xl font-bold text-dark counter"
                             data-target="15780"
                         >
                             <CountUp
@@ -39,7 +39,7 @@ const Impact = () => {
                             <i class="fas fa-smog"></i>
                         </div>
                         <h3
-                            class="text-4xl font-bold text-gray-800 counter"
+                            class="text-4xl font-bold text-dark counter"
                             data-target="39450"
                         >
                             <CountUp
@@ -60,7 +60,7 @@ const Impact = () => {
                             <i class="fas fa-tint"></i>
                         </div>
                         <h3
-                            class="text-4xl font-bold text-gray-800 counter"
+                            class="text-4xl font-bold text-dark counter"
                             data-target="23500000"
                         >
                             <CountUp

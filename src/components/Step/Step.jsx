@@ -2,7 +2,7 @@ import React from "react";
 import {CreditCardIcon, SearchLocationIcon, ShoppingBagIcon,} from "../../assets/Icon";
 
 const Step = () => { // Added a comment to force re-render
-    const secondaryColor = "bg-green-400";
+    const secondaryColor = "bg-secondary";
     const textColorMuted = "text-gray-600";
 
     return (
@@ -24,7 +24,7 @@ const Step = () => { // Added a comment to force re-render
                         >
                             <SearchLocationIcon/>
                         </div>
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                        <h3 className="text-xl font-semibold mb-2 text-dark">
                             1. Discover
                         </h3>
                         <p className={textColorMuted}>
@@ -39,7 +39,7 @@ const Step = () => { // Added a comment to force re-render
                         >
                             <CreditCardIcon/>
                         </div>
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                        <h3 className="text-xl font-semibold mb-2 text-dark">
                             2. Order & Pay
                         </h3>
                         <p className={textColorMuted}>
@@ -53,7 +53,7 @@ const Step = () => { // Added a comment to force re-render
                         >
                             <ShoppingBagIcon/>
                         </div>
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                        <h3 className="text-xl font-semibold mb-2 text-dark">
                             3. Pick Up & Enjoy
                         </h3>
                         <p className={textColorMuted}>

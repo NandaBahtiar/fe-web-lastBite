@@ -39,20 +39,18 @@ const NavBar = () => {
 
     const navClasses = `
         flex justify-between items-center
-        fixed top-0 left-0 right-0 z-50 p-2
+        fixed top-0 left-0 right-0 z-50 px-6 py-4
         transition-all duration-300 ease-in-out
         ${isScrolled ? "bg-white/90 backdrop-blur-lg shadow-xl" : "bg-white"}
     `;
 
-    const getLinkClass = (path, isMobile = false) =>
+    const getLinkClass = (path) =>
         `transition-all duration-300 ease-in-out font-medium pb-1
          hover:text-primary
          ${
             activeSection === path
                 ? "text-primary border-b-2 border-primary"
-                : isMobile
-                    ? "text-black"
-                    : "text-black"
+                : "text-gray-700"
         }`;
 
     const navLinks = (
@@ -100,10 +98,10 @@ const NavBar = () => {
             <ul className="hidden md:flex justify-center items-center gap-8 list-none p-0 m-0">
                 {navLinks}
                 <li>
-                    <div
+                    <a href="#download-app"
                         className="bg-secondary text-white rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
                         <span>Download App</span>
-                    </div>
+                    </a>
                 </li>
             </ul>
 
@@ -114,7 +112,7 @@ const NavBar = () => {
                     className="text-black focus:outline-none"
                 >
                     <svg
-                        className="w-6 h-6"
+                        className="w-8 h-8"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -142,14 +140,14 @@ const NavBar = () => {
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div
-                    className="md:hidden absolute top-full left-0 w-full bg-footerBackground/95 backdrop-blur-lg shadow-xl">
-                    <ul className="flex flex-col items-center gap-6 list-none p-6 m-0">
+                    className="md:hidden absolute top-full left-0 w-full bg-footerBackground/95 backdrop-blur-lg shadow-xl py-4">
+                    <ul className="flex flex-col items-center gap-6 list-none p-0 m-0">
                         {navLinks}
                         <li>
-                            <div
-                                className="bg-secondary text-white rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
+                            <a href="#download-app"
+                                className="bg-secondary text-light rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
                                 <span>Download App</span>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -13,7 +13,7 @@ const DownloadApp = () => {
                         <img src="https://placehold.co/180x60/000000/FFFFFF?text=Get+it+on+Google+Play" alt="Get it on Google Play" class="h-14" />
                      </a>
                      <a href="#" class="transform hover:scale-105 transition-transform">
-                        <img src="https://placehold.co/180x60/000000/FFFFFF?text=Download+on+the+App+Store" alt="Download on the App Store" class="h-14" />
+                        <img src="https://placehold.co/180x60/202124/f8f9fa?text=Download+on+the+App+Store" alt="Download on the App Store" class="h-14" />
                      </a>
                  </div>
             </div>

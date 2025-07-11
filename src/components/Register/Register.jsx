@@ -10,7 +10,7 @@ const Register = () => {
         Have leftover, sellable food at the end of the day? Don't throw it away!
         Join LastBite and earn extra income while helping the environment.
       </p>
-      <button className="bg-primary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300">
+      <button className="bg-primary hover:bg-[#28B463] text-light font-bold py-3 px-8 rounded-full transition-colors duration-300">
         Register in the App
       </button>
     </div>

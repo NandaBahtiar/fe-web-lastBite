@@ -1,0 +1,138 @@
+# Prompt untuk Membuat Halaman Developer - Last Bite
+
+## Deskripsi Tugas
+Buatkan sebuah halaman web yang menampilkan tim developer dari proyek "Last Bite" dengan desain yang menarik dan responsif.
+
+## Spesifikasi Teknis
+- **Framework**: React dengan Vite
+- **Styling**: Tailwind CSS atau CSS modern
+- **Responsif**: Desktop, tablet, dan mobile
+
+## Konten yang Harus Ditampilkan
+### Data Tim Developer:
+```javascript
+const developers = [
+  {
+    id: 1,
+    name: "Ahmad Rizki",
+    role: "Full Stack Developer",
+    image: "https://via.placeholder.com/300x300/4F46E5/white?text=AR",
+    bio: "Spesialis dalam React dan Node.js",
+    github: "https://github.com/ahmadrizki",
+    linkedin: "https://linkedin.com/in/ahmadrizki"
+  },
+  {
+    id: 2,
+    name: "Sari Dewi",
+    role: "Frontend Developer",
+    image: "https://via.placeholder.com/300x300/EC4899/white?text=SD",
+    bio: "Expert dalam UI/UX dan React",
+    github: "https://github.com/saridewi",
+    linkedin: "https://linkedin.com/in/saridewi"
+  },
+  {
+    id: 3,
+    name: "Budi Santoso",
+    role: "Backend Developer",
+    image: "https://via.placeholder.com/300x300/10B981/white?text=BS",
+    bio: "Fokus pada API dan database optimization",
+    github: "https://github.com/budisantoso",
+    linkedin: "https://linkedin.com/in/budisantoso"
+  },
+  {
+    id: 4,
+    name: "Lina Mariana",
+    role: "UI/UX Designer",
+    image: "https://via.placeholder.com/300x300/F59E0B/white?text=LM",
+    bio: "Passionate tentang user experience",
+    github: "https://github.com/linamariana",
+    linkedin: "https://linkedin.com/in/linamariana"
+  }
+];
+```
+
+## Desain Requirements
+
+### 1. Header Section
+- Judul "Meet Our Team" atau "Tim Developer"
+- Subtitle yang menjelaskan tentang tim
+- Background gradient yang menarik
+
+### 2. Developer Cards
+- **Layout**: Grid responsif (4 kolom desktop, 2 kolom tablet, 1 kolom mobile)
+- **Card Style**: 
+  - Foto profil bulat di bagian atas
+  - Nama developer (font bold, ukuran besar)
+  - Role/posisi (warna accent)
+  - Bio singkat
+  - Social media links (GitHub, LinkedIn)
+- **Efek**: Hover animations, shadow effects
+- **Spacing**: Proper padding dan margin
+
+### 3. Color Scheme
+- Primary: #4F46E5 (Indigo)
+- Secondary: #EC4899 (Pink)
+- Accent: #10B981 (Emerald)
+- Background: Gradient atau solid modern
+- Text: #1F2937 (Dark Gray)
+
+### 4. Typography
+- Font modern seperti Inter, Poppins, atau system fonts
+- Hierarchy yang jelas (h1, h2, body text)
+- Readable line height dan spacing
+
+### 5. Interactive Elements
+- Hover effects pada cards
+- Smooth transitions
+- Click animations pada social links
+- Loading states jika diperlukan
+
+### 6. Responsive Design
+- Mobile-first approach
+- Breakpoints: 640px (sm), 768px (md), 1024px (lg), 1280px (xl)
+- Proper image scaling
+- Readable text pada semua ukuran
+
+## Fitur Tambahan (Opsional)
+- Dark mode toggle
+- Filter berdasarkan role
+- Search functionality
+- Animasi saat scroll (AOS)
+- Modal detail developer
+- Contact form integration
+
+## Struktur File
+```
+src/
+├── components/
+│   ├── DeveloperCard.jsx
+│   ├── DeveloperGrid.jsx
+│   └── Header.jsx
+├── data/
+│   └── developers.js
+├── styles/
+│   └── globals.css
+└── pages/
+    └── DeveloperPage.jsx
+```
+
+## Contoh Implementasi
+Buatkan komponen React yang:
+1. Menggunakan hooks (useState, useEffect jika perlu)
+2. Memiliki prop-types atau TypeScript
+3. Mengikuti best practices React
+4. Accessible (ARIA labels, keyboard navigation)
+5. SEO friendly (meta tags, semantic HTML)
+
+## Referensi Desain
+- Inspirasi dari halaman tim GitHub, GitLab, atau Vercel
+- Modern card-based layouts
+- Minimalist tapi informatif
+- Professional appearance
+
+## Deliverables
+- Halaman developer yang fully functional
+- Responsive design yang baik
+- Clean dan maintainable code
+- Proper component structure
+- Documentation/comments jika diperlukan

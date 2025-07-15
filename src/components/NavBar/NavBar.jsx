@@ -57,31 +57,31 @@ const NavBar = () => {
         <>
             <li>
                 <a href="#HowItWorks" className={getLinkClass("#HowItWorks")}>
-                    How It Works
+                    Cara Kerja
                 </a>
             </li>
 
             <li>
                 <a href="#why" className={getLinkClass("#why")}>
-                    Why Us
+                    Mengapa Kami
                 </a>
             </li>
 
             <li>
                 <a href="#impact" className={getLinkClass("#impact")}>
-                    Impact
+                    Dampak
                 </a>
             </li>
 
             <li>
                 <a href="#user-response" className={getLinkClass("#user-response")}>
-                    Testimonials
+                    Testimoni
                 </a>
             </li>
 
             <li>
                 <a href="#contact" className={getLinkClass("#contact")}>
-                    Contact
+                    Kontak
                 </a>
             </li>
 
@@ -98,9 +98,9 @@ const NavBar = () => {
             <ul className="hidden md:flex justify-center items-center gap-8 list-none p-0 m-0">
                 {navLinks}
                 <li>
-                    <a href="#download-app"
-                        className="bg-secondary text-white rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
-                        <span>Download App</span>
+                    <a href="#contact"
+                       className="bg-secondary text-white rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
+                        <span>Unduh Aplikasi</span>
                     </a>
                 </li>
             </ul>
@@ -145,8 +145,8 @@ const NavBar = () => {
                         {navLinks}
                         <li>
                             <a href="#download-app"
-                                className="bg-secondary text-light rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
-                                <span>Download App</span>
+                               className="bg-secondary text-light rounded-full py-2 px-5 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer">
+                                <span>Unduh Aplikasi</span>
                             </a>
                         </li>
                     </ul>

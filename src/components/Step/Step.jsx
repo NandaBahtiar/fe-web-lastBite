@@ -10,10 +10,10 @@ const Step = () => { // Added a comment to force re-render
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                        Just 3 Easy Steps
+                        Hanya 3 Langkah Mudah
                     </h2>
                     <p className={`${textColorMuted} mt-2`}>
-                        Save delicious food quickly and conveniently.
+                        Hemat makanan lezat dengan cepat dan nyaman.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
@@ -25,11 +25,11 @@ const Step = () => { // Added a comment to force re-render
                             <SearchLocationIcon/>
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-dark">
-                            1. Discover
+                            1. Temukan
                         </h3>
                         <p className={textColorMuted}>
-                            Explore surplus food offers from restaurants and stores around
-                            you.
+                            Jelajahi penawaran makanan berlebih dari restoran dan toko di
+                            sekitar Anda.
                         </p>
                     </div>
                     {/* Step 2 */}
@@ -40,10 +40,10 @@ const Step = () => { // Added a comment to force re-render
                             <CreditCardIcon/>
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-dark">
-                            2. Order & Pay
+                            2. Pesan & Bayar
                         </h3>
                         <p className={textColorMuted}>
-                            Order your chosen food and pay securely directly in the app.
+                            Pesan makanan pilihan Anda dan bayar dengan aman langsung di aplikasi.
                         </p>
                     </div>
                     {/* Step 3 */}
@@ -54,11 +54,11 @@ const Step = () => { // Added a comment to force re-render
                             <ShoppingBagIcon/>
                         </div>
                         <h3 className="text-xl font-semibold mb-2 text-dark">
-                            3. Pick Up & Enjoy
+                            3. Ambil & Nikmati
                         </h3>
                         <p className={textColorMuted}>
-                            Pick up your order at the seller's location at the specified time.
-                            Enjoy!
+                            Ambil pesanan Anda di lokasi penjual pada waktu yang ditentukan.
+                            Nikmati!
                         </p>
                     </div>
                 </div>
